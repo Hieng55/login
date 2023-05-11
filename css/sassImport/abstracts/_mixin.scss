@@ -1,0 +1,35 @@
+@mixin bg($bgColor: red) {
+    background-color: $bgColor;
+}
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin position($direction: "left") {
+    position: absolute;
+    @if ($direction== "center") {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @if ($direction== "left") {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if ($direction== "top") {
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+    }
+}
+@mixin dFlex($center: "flex") {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+@mixin centerFlex($center: "center") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
