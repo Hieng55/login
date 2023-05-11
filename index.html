@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/signup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="login">
+                <div class="round turn"></div>
+                <div class="box">
+                    <div class="login-register">
+                        <div class="form-login">
+                            <div class="text">
+                                <h2>LOGIN</h2>
+                            </div>
+                            <form>
+                                <div class="input-container">
+                                    <input type="text" id="user" required />
+                                    <label for="user">UserName</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="password" required />
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="input-group">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+
+                                        <svg viewBox="0 0 64 64" height="18px" width="18px">
+                                            <path
+                                                d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                                                pathLength="575.0541381835938"
+                                                class="path"
+                                            ></path>
+                                        </svg>
+                                    </label>
+                                    <p>Save me</p>
+                                </div>
+                                <div class="content">
+                                    <div class="login-button">Login</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="login-register login-register1">
+                        <div class="form-login">
+                            <div class="text">
+                                <h2>REGISTER</h2>
+                            </div>
+                            <form>
+                                <div class="input-container">
+                                    <input type="text" id="username" required />
+                                    <label for="username">UserName</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" id="mail" required />
+                                    <label for="mail">Email</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="pass" required />
+                                    <label for="pass">Password</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="repass" required />
+                                    <label for="repass">Confirm Password</label>
+                                </div>
+                                <div class="content">
+                                    <div class="register-button">Register</div>
+                                </div>
+                                <!-- <div class="button">
+                                    <button class="login-check btn">LOGIN</button>
+                                    <button class="register btn active">REGISTER</button>
+                                </div> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="login-check btn active">LOGIN</button>
+                    <button class="register btn">REGISTER</button>
+                    <div class="bg"></div>
+                </div>
+            </div>
+
+            <div class="animation animation1"></div>
+            <div class="animation"></div>
+            <div class="attention att">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span></span>
+                <p class="color"></p>
+            </div>
+            <div class="success att">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span></span>
+                <p class="color"></p>
+            </div>
+        </div>
+        <script src="./js/signup.js"></script>
+    </body>
+</html>
